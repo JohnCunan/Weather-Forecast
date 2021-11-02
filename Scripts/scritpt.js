@@ -26,10 +26,10 @@ let weather = {
         document.querySelector(".country").innerText = ", " + country;
         document.querySelector(".icon").src = 
         "https://openweathermap.org/img/wn/"+ icon +".png";
-        document.querySelector(".description").innerText = description;
+        document.querySelector(".weather-description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";
-        document.getElementById(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".speed").innerText = "Wind Speed: " + speed + "km/h";
+        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
+        document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
         
     }
 

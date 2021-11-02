@@ -80,6 +80,7 @@ input.search-bar::placeholder {
 
 .description {
   font-size: 20px;
+  text-transform: capitalize;
 }
 
 .temp {
