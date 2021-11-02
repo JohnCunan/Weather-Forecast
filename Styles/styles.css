@@ -5,12 +5,15 @@ html {
   font-family: "Montserrat", "Thin 100";
   background-image: url("https://source.unsplash.com/1600x900/?landscape");
   background-size: cover;
+  overflow: hidden;
 }
 
 .main {
   border: solid 5px orange;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -21,7 +24,7 @@ html {
   margin: 5px;
 }
 
-.date-search {
+.container .date-search {
   display: flex;
   justify-content: space-between;
 }
