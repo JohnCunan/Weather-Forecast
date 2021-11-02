@@ -36,7 +36,7 @@ let weather = {
     }
 };
 
-/* SEARCH FUNCATION */
+/* SEARCH FUNCTION */
 
 document
     .querySelector(".btn")
