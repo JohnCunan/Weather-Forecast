@@ -6,11 +6,21 @@ body {
   background-size: cover;
 }
 
-.container {
+.container,
+.temp-container {
   display: flex;
   background: rgb(211, 233, 113); /* Delete Later */
   padding: 2.5em;
+  flex-direction: column;
 }
 
 .search {
+  margin-left: auto;
+  order: 0;
+}
+
+.date-time,
+.description,
+.temp-city {
+  order: 1;
 }
