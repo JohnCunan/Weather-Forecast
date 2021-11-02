@@ -9,7 +9,6 @@ html {
 }
 
 .main {
-  border: solid 5px orange;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -18,7 +17,6 @@ html {
 
 .container {
   display: flex;
-  border: solid 5px orange;
   padding: 2.5em;
   flex-direction: column;
   margin: 5px;
@@ -30,7 +28,44 @@ html {
 }
 
 .temp-city {
-  border: solid 5px orange;
   padding: 2.5em;
   margin: 5px;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #0c0c0c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+  transition: 0.2s ease-in-out;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #0c0c0c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #0000006b;
+}
+
+input.search-bar:hover {
+  background: #0000006b;
+}
+
+input.search-bar::placeholder {
+  color: white;
 }
