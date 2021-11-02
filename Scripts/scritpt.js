@@ -11,6 +11,28 @@ let weather = {
             .then((data) => this.displayWeather(data));
     },
 
+    displayWeather: function(data) {
+        /* EXTRACTS DATA FROM API */
+        const { name } = data;
+        const { country } = data.sys;
+        const { icon, description } = data.weather[0];
+        const { temp, humidity } = data.main;
+        const { speed } = data.wind;
+        console.log(name,icon,description,temp,humidity,speed,country);
+
+        /* DISPLAYS DATA AT THE HTML */
+
+        document.querySelector(".city").innerText = name;
+        document.querySelector(".country").innerText = ", " + country;
+        document.querySelector(".icon").src = 
+        "https://openweathermap.org/img/wn/"+ icon +".png";
+        document.querySelector(".description").innerText = description;
+        document.querySelector(".temp").innerText = temp + "°C";
+        document.getElementById(".humidity").innerText = "Humidity: " + humidity + "%";
+        document.querySelector(".speed").innerText = "Wind Speed: " + speed + "km/h";
+        
+    }
+
     
 
 };
