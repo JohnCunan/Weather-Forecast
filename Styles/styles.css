@@ -34,11 +34,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-betwen;
-  border: orange 2px solid;
-}
-
-.container .top-data .search {
-  border: orange 2px solid;
+  padding: 2em;
+  border-radius: 18px;
+  background: #00000077;
 }
 
 .temp-city {
@@ -98,6 +96,12 @@ input.search-bar::placeholder {
 .temp {
   font-size: 150px;
   font-family: "Montserrat", sans-serif;
+  text-shadow: 5px 5px #1d1d1d8f;
+}
+
+.city,
+.country {
+  text-shadow: 0 0 8px #0c0c0c;
 }
 
 .day,
