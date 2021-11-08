@@ -1,1 +1,1 @@
-# Weather-Forecast
+# Simple Weather Forecast App using OpenWeatherMap API
