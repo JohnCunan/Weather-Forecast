@@ -25,9 +25,20 @@ html {
   margin: 5px;
 }
 
-.container .date-search {
+.top-data {
   display: flex;
   justify-content: space-between;
+}
+
+.container .top-data .date-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betwen;
+  border: orange 2px solid;
+}
+
+.container .top-data .search {
+  border: orange 2px solid;
 }
 
 .temp-city {
