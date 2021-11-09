@@ -3,7 +3,7 @@ months = ['January','February','March','April','May','June',
 
 days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
 
-date_data = new Date();
+var date_data = new Date();
 
 current_day = date_data.getDay();
 current_month = date_data.getMonth();
