@@ -136,6 +136,7 @@ input.search-bar::placeholder {
 @media (max-width: 750px), (max-width: 800px) {
   body,
   html {
+    background-image: none;
   }
 
   .main {
@@ -146,6 +147,10 @@ input.search-bar::placeholder {
   .top-data {
     flex-direction: column-reverse;
     justify-content: none;
+  }
+
+  .flex-day-time {
+    justify-content: flex-start;
   }
 }
 
