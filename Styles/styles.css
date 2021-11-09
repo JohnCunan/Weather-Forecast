@@ -5,7 +5,6 @@ html {
   font-family: "Montserrat", "Thin 100";
   background-image: url("/Assets/background.jpg");
   background-size: cover;
-  overflow: hidden;
   transition: 0.2s ease-in-out;
 }
 
@@ -134,13 +133,34 @@ input.search-bar::placeholder {
 /*  MEDIA GENERATORS */
 
 @media (max-width: 750px) {
+  body,
+  html {
+  }
+
+  .main {
+    margin-left: 0px;
+  }
+
   .top-data {
     flex-direction: column-reverse;
+    justify-content: none;
   }
 }
 
 @media (max-width: 650px) {
   .temp {
     font-size: 120px;
+  }
+}
+
+@media (max-width: 550px) {
+  .temp {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 440px) {
+  .temp {
+    font-size: 90px;
   }
 }
