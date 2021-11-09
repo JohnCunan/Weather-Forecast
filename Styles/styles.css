@@ -30,6 +30,11 @@ html {
   justify-content: space-between;
 }
 
+.flex-day-time {
+  display: flex;
+  justify-content: space-between;
+}
+
 .container .top-data .date-desc {
   display: flex;
   flex-direction: column;
@@ -107,4 +112,13 @@ input.search-bar::placeholder {
 .day,
 .date {
   font-family: "Montserrat", sans-serif;
+}
+
+.day,
+.time {
+  font-size: 20px;
+}
+
+.date {
+  margin-top: 0.5em;
 }
