@@ -5,6 +5,7 @@ html {
   font-family: "Montserrat", "Thin 100";
   background-image: url("/Assets/background.jpg");
   background-size: cover;
+  overflow: hidden;
   transition: 0.2s ease-in-out;
 }
 
@@ -132,13 +133,14 @@ input.search-bar::placeholder {
 
 /*  MEDIA GENERATORS */
 
-@media (max-width: 750px) {
+@media (max-width: 750px), (max-width: 800px) {
   body,
   html {
   }
 
   .main {
     margin-left: 0px;
+    justify-content: flex-start;
   }
 
   .top-data {
