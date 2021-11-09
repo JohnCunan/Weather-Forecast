@@ -164,3 +164,13 @@ input.search-bar::placeholder {
     font-size: 90px;
   }
 }
+
+@media (max-width: 380px) {
+  .temp {
+    font-size: 70px;
+  }
+
+  .flex-day-time {
+    flex-direction: column;
+  }
+}
