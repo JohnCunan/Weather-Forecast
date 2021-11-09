@@ -68,7 +68,7 @@ input.search-bar {
   transition: 0.2s ease-in-out;
 }
 
-button {
+.btn {
   margin: 0.5em;
   border-radius: 50%;
   border: none;
@@ -81,7 +81,7 @@ button {
   transition: 0.2s ease-in-out;
 }
 
-button:hover {
+.btn:hover {
   background: #000000c2;
 }
 
@@ -102,11 +102,19 @@ input.search-bar::placeholder {
   font-size: 150px;
   font-family: "Montserrat", sans-serif;
   text-shadow: 5px 5px #1d1d1d8f;
+  margin-bottom: 0;
+}
+
+.tempf {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  text-shadow: 5px 5px #1d1d1d8f;
+  margin-top: 0;
 }
 
 .city,
 .country {
-  text-shadow: 0 0 8px #0c0c0c;
+  text-shadow: 2px 2px 8px #0c0c0c;
 }
 
 .day,
@@ -121,4 +129,18 @@ input.search-bar::placeholder {
 
 .date {
   margin-top: 0.5em;
+}
+
+/*  MEDIA GENERATORS */
+
+@media (max-width: 750px) {
+  .top-data {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 650px) {
+  .temp {
+    font-size: 120px;
+  }
 }
