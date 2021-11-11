@@ -151,6 +151,11 @@ input.search-bar::placeholder {
   margin-top: 0.5em;
 }
 
+.bottom-data .b-temp,
+.b-tempf {
+  font-size: 30px;
+}
+
 /*  MEDIA GENERATORS */
 
 @media (max-width: 750px), (max-width: 800px) {
