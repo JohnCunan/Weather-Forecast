@@ -21,6 +21,11 @@ let weather = {
 
         /* DISPLAYS DATA AT THE HTML */
 
+        let tempF = ((temp * 1.8) + 32);
+        let tempFRestrict = tempF.toFixed(2);
+
+        console.log(tempFRestrict);
+
         document.querySelector(".city").innerText = name;
         document.querySelector(".b-city").innerText = name;
         document.querySelector(".country").innerText = ", " + country;
@@ -30,8 +35,8 @@ let weather = {
         document.querySelector(".weather-description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";
         document.querySelector(".b-temp").innerText = temp + "°C";
-        document.querySelector(".tempf").innerText = ((temp * 1.8) +32) + "°F";
-        document.querySelector(".b-tempf").innerText = ((temp * 1.8) +32) + "°F";
+        document.querySelector(".tempf").innerText = tempFRestrict + "°F";
+        document.querySelector(".b-tempf").innerText = tempFRestrict + "°F";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+ name +"')";
