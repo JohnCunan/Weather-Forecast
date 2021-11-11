@@ -193,6 +193,7 @@ input.search-bar::placeholder {
 
   .container {
     padding-top: 0;
+    padding-bottom: 0;
   }
   .date {
     font-size: 1.4em;
