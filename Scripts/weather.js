@@ -58,4 +58,10 @@ document
     }
 });
 
+document
+    .querySelector(".convert-btn")
+    .addEventListener("click", function() {
+        alert("Feature Coming Soon");
+    })
+
 weather.fetchWeather("Manila"); //DEFAULT LOCATION

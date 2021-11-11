@@ -56,13 +56,14 @@ html {
 
 .b-container {
   display: flex;
+  justify-content: flex-start;
 }
 
 .bottom-data {
   /*visibility: hidden;
   position: absolute;*/
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   padding: 2em;
   border-radius: 18px;
   background: #000000c5;
@@ -71,10 +72,6 @@ html {
 
 .b-flex-temp {
   display: flex;
-}
-
-.b-convert-btn {
-  margin-left: 60px;
 }
 
 .b-flex-country {
@@ -164,9 +161,26 @@ input.search-bar::placeholder {
   font-size: 30px;
 }
 
+.convert-btn {
+  margin: 0.5em;
+  padding: 10px;
+  margin-left: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background: #000000c5;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.convert-btn:hover {
+  background: #ffffff;
+  color: #0c0c0c;
+}
+
 /*  MEDIA GENERATORS */
 
-@media (max-width: 750px), (max-width: 800px) {
+@media (max-width: 750px), (max-height: 800px) {
   .main {
     margin-left: 0px;
     justify-content: flex-start;
