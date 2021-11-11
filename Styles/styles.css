@@ -6,6 +6,7 @@ html {
   background-image: url("/Assets/background.jpg");
   background-size: cover;
   transition: 0.2s ease-in-out;
+  overflow: hidden;
 }
 
 .main {
