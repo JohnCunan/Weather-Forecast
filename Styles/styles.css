@@ -69,6 +69,14 @@ html {
   margin-left: 43px;
 }
 
+.b-flex-temp {
+  display: flex;
+}
+
+.b-convert-btn {
+  margin-left: 60px;
+}
+
 .b-flex-country {
   display: flex;
 }
@@ -159,11 +167,6 @@ input.search-bar::placeholder {
 /*  MEDIA GENERATORS */
 
 @media (max-width: 750px), (max-width: 800px) {
-  body,
-  html {
-    background-image: none;
-  }
-
   .main {
     margin-left: 0px;
     justify-content: flex-start;
