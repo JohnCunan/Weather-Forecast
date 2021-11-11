@@ -22,12 +22,16 @@ let weather = {
         /* DISPLAYS DATA AT THE HTML */
 
         document.querySelector(".city").innerText = name;
+        document.querySelector(".b-city").innerText = name;
         document.querySelector(".country").innerText = ", " + country;
+        document.querySelector(".b-country").innerText = ", " + country;
         document.querySelector(".icon").src = 
         "https://openweathermap.org/img/wn/"+ icon +".png";
         document.querySelector(".weather-description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";
+        document.querySelector(".b-temp").innerText = temp + "°C";
         document.querySelector(".tempf").innerText = ((temp * 1.8) +32) + "°F";
+        document.querySelector(".b-tempf").innerText = ((temp * 1.8) +32) + "°F";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+ name +"')";
