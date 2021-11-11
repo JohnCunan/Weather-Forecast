@@ -60,8 +60,8 @@ html {
 }
 
 .bottom-data {
-  /*visibility: hidden;
-  position: absolute;*/
+  visibility: hidden;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   padding: 2em;
@@ -205,6 +205,10 @@ input.search-bar::placeholder {
 @media (max-width: 550px) {
   .temp {
     font-size: 100px;
+  }
+
+  .bottom-data {
+    visibility: visible;
   }
 }
 
