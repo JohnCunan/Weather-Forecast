@@ -234,4 +234,8 @@ input.search-bar::placeholder {
   .flex-day-time {
     flex-direction: column;
   }
+
+  .convert-btn {
+    margin-left: 21px;
+  }
 }
