@@ -39,7 +39,11 @@ let weather = {
     },
     search: function() {
         this.fetchWeather(document.querySelector(".search-bar").value);
+    },
+    convertF: function() {
+        document.querySelector(".b-temp").innerText = tempFarenheit + "°F";
     }
+
 };
 
 /* SEARCH FUNCTION */

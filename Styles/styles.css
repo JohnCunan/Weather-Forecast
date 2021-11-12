@@ -239,3 +239,19 @@ input.search-bar::placeholder {
     margin-left: 21px;
   }
 }
+
+@media (max-width: 370px) {
+  .convert-btn {
+    margin-left: 19px;
+  }
+}
+
+@media (max-width: 360px) {
+  .convert-btn {
+    margin-left: 16px;
+  }
+
+  .bottom-data {
+    padding-right: 18px;
+  }
+}
