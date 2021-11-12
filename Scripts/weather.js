@@ -1,3 +1,8 @@
+var cF = 0, cC = 0;
+var isF = false;
+var isC = true;
+
+
 let weather = {
 
     "apiKey": "28a63d18f2d7e2f6f49374c2827014de",
@@ -21,6 +26,7 @@ let weather = {
 
         /* DISPLAYS DATA AT THE HTML */
         let tempFarenheit = ((temp * 1.8) + 32).toFixed(2);
+        cF = tempFarenheit, cC= temp;
 
         document.querySelector(".city").innerText = name;
         document.querySelector(".b-city").innerText = name;
@@ -41,8 +47,16 @@ let weather = {
         this.fetchWeather(document.querySelector(".search-bar").value);
     },
     convertF: function() {
-        document.querySelector(".b-temp").innerText = tempFarenheit + "°F";
+        document.querySelector(".b-temp").innerText = cF + "°F";
+        isF = true;
+        isC = false;
+    },
+    convertC: function() {
+        document.querySelector(".b-temp").innerText = cC + "°C";
+        isF = false;
+        isC = true;
     }
+    
 
 };
 
@@ -65,7 +79,14 @@ document
 document
     .querySelector(".convert-btn")
     .addEventListener("click", function() {
-        alert("Feature Coming Soon");
+        //alert("Feature Coming Soon");
+        if(isF == false) {
+            weather.convertF();
+            //document.querySelector(".convert-btn").innerText = "To Celsius";
+        } else if (isC == false) {
+            weather.convertC();
+            //document.querySelector(".convert-btn").innerText = "To Farenheit";
+        }
     })
 
 weather.fetchWeather("Manila"); //DEFAULT LOCATION
