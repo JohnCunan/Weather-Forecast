@@ -1,7 +1,7 @@
 months = ['January','February','March','April','May','June',
           'July','August','September','October','November','December']
 
-days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 
 var date_data = new Date();
 
@@ -13,7 +13,7 @@ current_year = date_data.getFullYear();
 
 document.querySelector(".day").innerText = 
     days[current_day] + ",  ";
-    
+
 document.querySelector(".date").innerText = 
     `${months[current_month]} ${current_date}, ${current_year}`;
 
