@@ -12,7 +12,7 @@ current_year = date_data.getFullYear();
 
 
 document.querySelector(".day").innerText = 
-    days[current_day - 1] + ",  ";
+    days[current_day] + ",  ";
 document.querySelector(".date").innerText = 
     `${months[current_month]} ${current_date}, ${current_year}`;
 
@@ -35,3 +35,4 @@ function time() {
 
     
 }
+
