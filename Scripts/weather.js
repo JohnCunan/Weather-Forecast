@@ -2,7 +2,6 @@ var cF = 0, cC = 0;
 var isF = false;
 var isC = true;
 
-
 let weather = {
 
     "apiKey": "28a63d18f2d7e2f6f49374c2827014de",
