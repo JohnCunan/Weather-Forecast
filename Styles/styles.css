@@ -31,11 +31,6 @@ html {
   justify-content: space-between;
 }
 
-.flex-day-time {
-  display: flex;
-  justify-content: space-between;
-}
-
 .container .top-data .date-desc {
   display: flex;
   flex-direction: column;

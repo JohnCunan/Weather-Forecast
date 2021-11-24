@@ -28,6 +28,10 @@
   .bottom-data {
     visibility: visible;
   }
+
+  .temp-city {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 440px) {
