@@ -37,7 +37,6 @@ let weather = {
         document.querySelector(".temp").innerText = temp + "°C";
         document.querySelector(".b-temp").innerText = temp + "°C";
         document.querySelector(".tempf").innerText = tempFarenheit + "°F";
-        //document.querySelector(".b-tempf").innerText = tempFarenheit + "°F";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/h";
     },
@@ -74,17 +73,12 @@ document
     }
 });
 
+/* CONVERT TO F/C FUNCTION */
+
 document
     .querySelector(".convert-btn")
     .addEventListener("click", function() {
-        //alert("Feature Coming Soon");
-        if(isF == false) {
-            weather.convertF();
-            //document.querySelector(".convert-btn").innerText = "To Celsius";
-        } else if (isC == false) {
-            weather.convertC();
-            //document.querySelector(".convert-btn").innerText = "To Farenheit";
-        }
+        (isF == false) ? weather.convertF() :  weather.convertC();
     })
 
 weather.fetchWeather("Manila"); //DEFAULT LOCATION
