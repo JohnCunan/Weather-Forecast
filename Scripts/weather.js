@@ -1,6 +1,6 @@
-var cF = 0, cC = 0;
-var isF = false;
-var isC = true;
+let cF = 0, cC = 0;
+let isF = false;
+let isC = true;
 
 let weather = {
 
@@ -13,6 +13,7 @@ let weather = {
         )
             .then((response) => response.json())
             .then((data) => this.displayWeather(data));
+            
     },
 
     displayWeather: function(data) {
@@ -22,6 +23,7 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
+        const { lon, lat} = data.coord;
 
         /* DISPLAYS DATA AT THE HTML */
         let tempFarenheit = ((temp * 1.8) + 32).toFixed(2);
